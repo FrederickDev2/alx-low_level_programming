@@ -16,6 +16,7 @@ void addr_print(char *ptr)
 	int i;
 	int begin;
 	char sys;
+
 	printf("  Entry point address:               0x");
 
 	sys = ptr[4] + '0';
@@ -87,6 +88,7 @@ void print_type(char *ptr)
 void print_osabi(char *ptr)
 {
 	char osabi = ptr[7];
+
 	printf("  OS/ABI:                            ");
 	if (osabi == 0)
 		printf("UNIX - System V\n");
